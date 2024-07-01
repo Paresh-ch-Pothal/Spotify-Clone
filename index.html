@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'Spotify – Web Player'</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <!-- <iframe src="https://cross-origin.com/myvideo.html" allow="autoplay; fullscreen"></iframe> -->
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                    <img class="invert" src="Images/close.svg" alt="close">
+                </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" width="110" src="Images/spotifylogo.svg" alt="spotify">
+                </div>
+                <ul>
+                    <li><img class="invert" src="Images/home.svg" alt="Home"><a href="#">Home</a></li>
+                    <li><img class="invert" src="Images/search.svg" alt="Search"><a href="#">Search</a></li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded p-1">
+                <div class="heading">
+                    <img class="invert" src="Images/library.svg" alt="Playlist">
+                    <h4>Your Library</h4>
+                </div>
+                <div class="songlist">
+                    <ul>
+                        <!-- <li><img class="invert" src="Images/music.svg" alt="">
+                            <div class="info">
+                                <div>Song Name</div>
+                                <div>Artist Name</div>
+                            </div>
+                            <div class="playnow"><span>Play Now</span></div>
+                            <img class="invert" src="Images/play.svg" alt="play-button">
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/privacy/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id=""
+                            data-encore-id="textLink">
+                            <span data-encore-id="type">About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <img class="hamburger invert" src="Images/hamburger.svg" alt="hamburger">
+                    <img class="invert" src="Images/leftarrow.svg"
+                        alt="Arrow-left">
+                    <img class="invert" src="Images/rightarrow.svg"
+                        alt="Arrow-right">
+                </div>
+                <div class="buttons">
+                    <button class="signup">Sign Up</button>
+                    <button class="login">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyplaylist">
+                <h3>Spotify Playlist</h3>
+                <div class="cardcontainer">
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="abovebar">
+                    <div class="songinfo"></div>
+                    <div class="songsbutton">
+                        <img class="invert" id="previous" src="Images/previous.svg" alt="previous">
+                        <img class="invert" id="play" src="Images/play.svg" alt="play-button">
+                        <img class="invert" id="next" src="Images/next.svg" alt="Next">
+                    </div>
+                    <div class="timevol">
+                        <div class="songtime"></div>
+                        <div class="volume">
+                            <img class="invert" src="Images/volume.svg" alt="volume">
+                            <div class="range">
+                                <input type="range" name="volume">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
